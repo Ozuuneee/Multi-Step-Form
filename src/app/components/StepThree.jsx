@@ -76,7 +76,7 @@ const StepThree = ({ formData, handleChange, handleFileChange, handleBack, setSt
             />
           ) : (
             <div className="flex flex-col items-center text-gray-500">
-              <span className="text-3xl"><img src='addImage.png'></img> </span>
+              <span className="text-3xl">📷</span>
               <p className="mt-2">Add image</p>
             </div>
           )}
