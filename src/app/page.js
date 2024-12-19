@@ -77,7 +77,7 @@ const MultiStepForm = () => {
         {step !== 4 && (
           <>
             <h1 className="text-2xl font-bold mb-4 text-gray-700"> 
-              Join Us! 😎 - Step {step} of 4 
+              Join Us :3 😎 - Step {step} of 4 
             </h1>
             <p className="text-gray-700 mb-6">
               Please provide all current information accurately.
