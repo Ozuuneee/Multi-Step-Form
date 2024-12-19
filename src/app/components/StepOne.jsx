@@ -106,7 +106,11 @@ const StepOne = ({ formData, errors, handleChange, handleNext }) => {
         <button
           onClick={handleNext}
           disabled={!isFormValid()}
-          className={`bg-[#D6D8DB] text-[#A9ACAF] px-[10px] w-[100%] py-3 rounded-md after:content-['>'] after:ml-3 ${!isFormValid() ? 'opacity-50 cursor-not-allowed' : 'bg-[#202124] text-[#FFFFFF]'}`}
+          className={`px-[10px] w-[100%] py-3 rounded-md after:content-['>'] after:ml-3 ${
+            isFormValid()
+              ? 'bg-[#202124] text-[#FFFFFF]'
+              : 'bg-[#D6D8DB] text-[#A9ACAF] opacity-50 cursor-not-allowed'
+          }`}
         >
           Continue 1/3
         </button>

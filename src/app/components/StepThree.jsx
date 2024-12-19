@@ -101,9 +101,13 @@ const StepThree = ({ formData, handleChange, handleFileChange, handleBack, setSt
         </button>
         <button
           onClick={handleSubmit}
-          className={`bg-[#D6D8DB] text-[#A9ACAF] ml-3 w-[100%] py-3 rounded-md after:content-['>'] after:ml-3 ${
-            !isFormValid() ? "opacity-50 cursor-not-allowed" : "bg-[#202124] text-[#FFFFFF]"
-          }`}
+          disabled={!isFormValid()}
+          className={`ml-3 w-[100%] py-3 rounded-md after:content-['>'] after:ml-3 
+            ${
+              isFormValid()
+                ? 'bg-[#202124] text-[#FFFFFF]'
+                : 'bg-[#D6D8DB] text-[#A9ACAF] opacity-50 cursor-not-allowed'
+            }`}
         >
           Submit 3/3
         </button>
